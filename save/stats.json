@@ -1,0 +1,16 @@
+{
+  "playtime": 85.25,
+  "modes": {
+    "training": {
+      "playtime": 0,
+      "clear": 0
+    },
+    "freebattle": {
+      "playtime": 85.25,
+      "clear": 1,
+      "clearcount": {
+        "kfm_zss": 1
+      }
+    }
+  }
+}

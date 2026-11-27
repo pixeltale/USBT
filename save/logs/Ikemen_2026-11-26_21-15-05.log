@@ -1,0 +1,37 @@
+Version: v1.0.0
+Build Time: 2026.09.12
+Platform: windows (amd64)
+Vulkan 1.3.239
+RAM in Use: 68 MB / OS Reserved: 125 MB
+Active Goroutines: 2
+Timestamp: 2026-11-26 21:15:05
+
+Engine error
+
+Error: .\external\mods\MRZ_TagStyle_Selector.lua:12: 
+MRZ Tag Style Selector:
+data/MRZ_Modules/MRZ_Tag_System/Tag_Selector/MRZ_TagStyle_Slots.lua must return exactly three slots.
+
+stack traceback:
+	[G]: in function 'panicError'
+	.\external\mods\MRZ_TagStyle_Selector.lua:12: in function 'fail'
+	.\external\mods\MRZ_TagStyle_Selector.lua:26: in function 'loadSlots'
+	.\external\mods\MRZ_TagStyle_Selector.lua:58: in function <.\external\mods\MRZ_TagStyle_Selector.lua:0>
+	[G]: in function 'require'
+	external/script/main.lua:4005: in main chunk
+	[G]: ?
+
+Go stack traceback:
+goroutine 1 [running, locked to thread]:
+runtime/debug.Stack()
+	runtime/debug/stack.go:24 +0x65
+main.handlePanic({0x7ff6c2914960?, 0xc0045c8d40})
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:372 +0x408
+main.realMain.func1()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:66 +0x2a
+panic({0x7ff6c2914960, 0xc0045c8d40})
+	runtime/panic.go:884 +0x213
+main.realMain()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:206 +0x573
+main.main()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:59 +0x17
